@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #141414;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  color: red;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.banner {
+  background-image: url('https://image.tmdb.org/t/p/original/t/p/w1280/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 30px;
+  margin-top: 60px;
+}
+
+.banner-content button {
+  background-color: rgba(51, 51, 51, 0.5);
+  color: white;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.row {
+  margin: 30px 20px;
+}
+
+.row h2 {
+  margin-bottom: 10px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-posters img {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.row-posters img:hover {
+  transform: scale(1.1);
+}
